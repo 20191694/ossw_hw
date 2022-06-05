@@ -43,3 +43,13 @@ jobs 명령어란?
   | -n      | 프로세스 그룹 중에 대표 프로세스 ID를 출력 |
   | -p      | 각 프로세스 ID에 대한 한 행씩 출력         |
   | command | 지정한 명령어를 실행                       |
+- jobs로 출력되는 백그라운드 작업의 상태값
+  | Running          | 작업이 계속 진행중                       |
+  |------------------|------------------------------------------|
+  | Done             | 작업이 완료되어 0을 반환                 |
+  | Done(code)       | 작업이 종료되었으며 0이 아닌 코드를 반환 |
+  | Stopped          | 작업이 일시 중단                         |
+  | Stopped(SIGTSTP) | SIGTSTP 시그널이 작업을 일시 중단        |
+  | Stopped(SIGSTOP) | SIGSTOP 시그널이 작업을 일시 중단        |
+  | Stopped(SIGTTIN) | SIGTTIN 시그널이 작업을 일시 중단        |
+  | Stopped(SIGTTOU) | SIGTTOU 시그널이 작업을 일시 중단        |
