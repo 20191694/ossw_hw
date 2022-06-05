@@ -53,3 +53,12 @@ jobs 명령어란?
   | Stopped(SIGSTOP) | SIGSTOP 시그널이 작업을 일시 중단        |
   | Stopped(SIGTTIN) | SIGTTIN 시그널이 작업을 일시 중단        |
   | Stopped(SIGTTOU) | SIGTTOU 시그널이 작업을 일시 중단        |
+
+**4) kill**  
+kill 명령어란?
+: kill명령어는 대개 프로세스를 죽일 떄 사용, 내부적으로는 프로세스에 시그널을 보내 원하는 작업을 하게 함
+- 명령어 사용법 >> **kill [option]**
+- 명령어 옵션   
+  | 옵션 | 기능            |
+  |----|------------------|
+  | -l | 시그널 리스트 확인 |
